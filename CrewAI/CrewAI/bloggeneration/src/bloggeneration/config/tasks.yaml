@@ -1,0 +1,24 @@
+# tasks.yaml
+
+document_processing_task:
+  description: "Process the content of the provided PDF file."
+  expected_output: "Raw text extracted from the PDF, preserving the structure and meaning of the original content."
+  agent: pdf_reader
+
+data_extraction_task:
+  description: "Extract relevant information from the processed text."
+  expected_output: "Structured data containing key insights and information."
+  agent: information_extractor
+ 
+
+content_summary_task:
+  description: "Generate a concise summary of the extracted content."
+  expected_output: "A clear and concise summary of the processed information."
+  agent: content_summarizer
+  
+
+blog_post_creation_task:
+  description: "Create a well-structured blog post based on the summarized content."
+  expected_output: "A formatted blog post in Markdown format."
+  agent: content_formatter
+ 
