@@ -1,0 +1,39 @@
+document_processing_task:
+  description: >
+    Extract and preprocess raw text from the provided PDF file. 
+    Ensure that all textual information is accurately retrieved, 
+    preserving the structure and meaning of the original content.
+  expected_output: >
+    A clean and structured text output containing all extracted content 
+    from the PDF, ready for further analysis.
+  agent: pdf_reader
+
+data_extraction_task:
+  description: >
+    Analyze the extracted text and identify the most important pieces of information. 
+    Organize these insights into structured key points that can be expanded further.
+  expected_output: >
+    A list of 10 key insights, formatted as bullet points, summarizing the most 
+    relevant and crucial information extracted from the text.
+  agent: information_extractor
+
+content_summary_task:
+  description: >
+    Take the extracted key insights and generate a well-structured summary. 
+    Ensure the summary is concise, yet captures the essential details 
+    in a clear and coherent manner.
+  expected_output: >
+    A polished summary that effectively condenses the information while 
+    maintaining clarity and relevance. Formatted in markdown without '```'.
+  agent: content_summarizer
+
+blog_post_creation_task:
+  description: >
+    Transform the summarized content into a well-structured blog post. 
+    Ensure the article is engaging, easy to read, and formatted properly with 
+    a compelling title, subheadings, and a strong conclusion.
+  expected_output: >
+    A fully formatted blog post with a captivating title, structured subheadings, 
+    and a reader-friendly narrative. Content should be engaging and informative, 
+    formatted as markdown without '```'.
+  agent: content_formatter
