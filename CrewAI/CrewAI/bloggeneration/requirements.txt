@@ -1,4 +1,0 @@
-crewai==0.86.0
-pdfplumber==0.11.5
-python-dotenv==1.0.1
-crewai-tools==0.17.0
